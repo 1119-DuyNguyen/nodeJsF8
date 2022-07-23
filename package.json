@@ -4,7 +4,8 @@
   "description": "f8",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon --inspect index.js",
+    "start": "nodemon --inspect src/index.js",
+    "watch":"sass --watch --update --no-source-map src/resources/scss/app.scss src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -25,6 +26,9 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "express-handlebars": "^6.0.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.0"
   }
 }
